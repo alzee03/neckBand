@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:key="class_screen">
+
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/pref_layout2"
+        android:title="기기 연결">
+
+        <SwitchPreference
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:title="블루투스 켜기"
+            app:enabled="true"
+            android:key="deviceOnOff" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/pref_layout"
+        android:title="소리 종류"
+        android:summary="감지하고 싶은 소리를 선택합니다."
+        app:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="동물 울음 소리"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class1" />
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="차 소리와 경적 소리"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class2" />
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="사이렌 소리"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class3" />
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="열차 소리"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class4" />
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="노크 소리"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class5" />
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="공사 소음"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class6" />
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="초인종 소리"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class7" />
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="폭발음"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class8" />
+
+        <CheckBoxPreference
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="아이 울음 소리"
+            app:enabled="true"
+            app:iconSpaceReserved="false"
+            android:key="class9" />
+    </PreferenceCategory>
+</PreferenceScreen>
